@@ -62,3 +62,64 @@
  1351  hal config provider azure account add my-azure-account   --client-id $APP_ID   --tenant-id $TENANT_ID   --subscription-id $SUBSCRIPTION_ID   --default-key-vault $VAULT_NAME   --default-resource-group $RESOURCE_GROUP   --packer-resource-group $RESOURCE_GROUP   --app-key
  1352  az account list
  1353  history
+ 1354  hal config deploy edit --type localdebian
+ 1355  hal config storage edit --type redis
+ 1356  hal version list
+ 1357  hal deploy apply
+ 1358  cat /home/sbesinci/.hal/default/staging/gate.yml
+ 1359  ls -alh /home/sbesinci/.hal/default/staging/gate.yml
+ 1360  rm /home/sbesinci/.hal/default/staging/gate.yml
+ 1361  hal deploy apply
+ 1362  rm -r /home/sbesinci/.hal/default/staging/dependencies/
+ 1363  hal deploy apply
+ 1364  rm /home/sbesinci/.hal/default/staging/spinnaker.yml
+ 1365  hal deploy apply
+ 1366  ls -alh /home/sbesinci/.hal/default/history/service-settings.yml
+ 1367  chmod 664 /home/sbesinci/.hal/default/history/service-settings.yml
+ 1368  hal deploy apply
+ 1369  exit
+ 1370  hal deploy apply
+ 1371  hal deploy connect
+ 1372  netstat -anltp
+ 1373  netstat -anltp | grep "LISTEN"
+ 1374  curl http://localhost:9000
+ 1375  cat /etc/apache2/apache2.conf
+ 1376  cat /etc/apache2/ports.conf
+ 1377  nano /etc/apache2/ports.conf
+ 1378  service apache2 restart
+ 1379  nano /etc/apache2/ports.conf
+ 1380  curl http://localhost:9000
+ 1381  netstat -anltp
+ 1382  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1383  service apache2 restart
+ 1384  curl http://localhost:9000
+ 1385  curl http://localhost:9200
+ 1386  netstat -anltp
+ 1387  service apache2 restart
+ 1388  netstat -anltp
+ 1389  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1390  nano /etc/apache2/ports.conf
+ 1391  service apache2 restart
+ 1392  netstat -anltp
+ 1393  systemctl enable redis-server && sudo systemctl start redis-server
+ 1394  sudo systemctl restart spinnaker
+ 1395  netstat -anltp
+ 1396  netstat -anltp | grep "LISTEN"
+ 1397  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1398  service apache2 restart
+ 1399  systemctl enable redis-server && sudo systemctl start redis-server
+ 1400  sudo systemctl restart spinnaker
+ 1401  netstat -anltp | grep "LISTEN"
+ 1402  nano /etc/apache2/ports.conf
+ 1403  service apache2 restart
+ 1404  nano /etc/apache2/ports.conf
+ 1405  service apache2 restart
+ 1406  systemctl enable redis-server && sudo systemctl start redis-server
+ 1407  sudo systemctl restart spinnaker
+ 1408  journalctl | tail
+ 1409  curl http://localhost:8084/jobs/preconfigure
+ 1410  curl http://localhost:8084/jobs/preconfigured
+ 1411  curl http://localhost:8084/credentials?expand=true
+ 1412  curl http://spinnaker.uksouth.cloudapp.azure.com:8084/credentials?expand=true
+ 1413  netstat -anltp | grep "LISTEN"
+ 1414  history

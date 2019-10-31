@@ -1,0 +1,64 @@
+1290  curl -O https://raw.githubusercontent.com/spinnaker/halyard/master/install/debian/InstallHalyard.sh
+ 1291  cat InstallHalyard.sh
+ 1292  netstat -anltp
+ 1293  systemctl remove spinnaker
+ 1294  systemctl stop spinnaker
+ 1295  systemctl disable spinnaker
+ 1296  apt uninstall spinnaker
+ 1297  apt remove spinnaker
+ 1298  apt-get remove spinnaker
+ 1299  spinnaker
+ 1300  netstat -anltp
+ 1301  clear
+ 1302  apt-get update
+ 1303  clear
+ 1304  ls
+ 1305  sudo bash InstallHalyard.sh
+ 1306  hal
+ 1307  hal --version
+ 1308  systemctl status hal
+ 1309  systemctl status halyard
+ 1310  systemctl status haly
+ 1311  . ~/.bashrc
+ 1312  hal -h
+ 1313  hal -v
+ 1314  update-halyard
+ 1315  netstat -anltp
+ 1316  nano InstallHalyard.sh
+ 1317  ls -alh /opt/spinnaker/config/halyard-user
+ 1318  cat /opt/spinnaker/config/halyard-user
+ 1319  az --version
+ 1320  az update
+ 1321  apt-get update
+ 1322  sudo apt-get update azure-cli
+ 1323  apt-get update azure-cli
+ 1324  sudo apt-get update && sudo apt-get upgrade
+ 1325  az --version
+ 1326  az login
+ 1327  az account-list
+ 1328  az account list
+ 1329  SUBSCRIPTION_ID=f11822bb-7aee-474a-b0cf-d3b33793b52a
+ 1330  az account set --subscription $SUBSCRIPTION_ID
+ 1331  az ad sp create-for-rbac --name "Spinnaker"
+ 1332  az ad sp create-for-rbac --name "Spinnaker-Deploy"
+ 1333  APP_ID=18d9da54-f0e4-46ae-b683-9f2fa86894a4
+ 1334  TENANT_ID=8fbe7bd6-3c2e-4459-a184-ac9f37fd9c68
+ 1335  az account list-locations --query [].name
+ 1336  RESOURCE_GROUP="Spinnaker-Deploy"
+ 1337  az group create --name $RESOURCE_GROUP --location uksouth
+ 1338  VAULT_NAME="Spinnaker-Deploy"
+ 1339  az keyvault create --enabled-for-template-deployment true --resource-group $RESOURCE_GROUP --name $VAULT_NAME
+ 1340  az keyvault set-policy --secret-permissions get --name $VAULT_NAME --spn $APP_ID
+ 1341  ssh-keygen -t rsa
+ 1342  az keyvault secret set --name VMUsername --vault-name $VAULT_NAME --value sbesinci
+ 1343  az keyvault secret set --name VMSshPublicKey --vault-name $VAULT_NAME --value WVoITiF7/udycCBIjptjRVTVJ/pl3jHGaPSmCkKGwZs
+ 1344  az keyvault secret set --name VMPassword --vault-name $VAULT_NAME --value q1.Mw2.Ne3.B
+ 1345  hal config provider azure enable
+ 1346  hal config provider azure account add my-azure-account   --client-id $APP_ID   --tenant-id $TENANT_ID   --subscription-id $SUBSCRIPTION_ID   --default-key-vault $VAULT_NAME   --default-resource-group $RESOURCE_GROUP   --packer-resource-group $RESOURCE_GROUP   --app-key
+ 1347  az account list
+ 1348  hal config provider azure account add my-azure-account   --client-id $APP_ID   --tenant-id $TENANT_ID   --subscription-id $SUBSCRIPTION_ID   --default-key-vault $VAULT_NAME   --default-resource-group $RESOURCE_GROUP   --packer-resource-group $RESOURCE_GROUP   --app-key
+ 1349  journalctl | tail
+ 1350  az ad sp credential reset --name $APP_ID
+ 1351  hal config provider azure account add my-azure-account   --client-id $APP_ID   --tenant-id $TENANT_ID   --subscription-id $SUBSCRIPTION_ID   --default-key-vault $VAULT_NAME   --default-resource-group $RESOURCE_GROUP   --packer-resource-group $RESOURCE_GROUP   --app-key
+ 1352  az account list
+ 1353  history

@@ -123,3 +123,50 @@
  1412  curl http://spinnaker.uksouth.cloudapp.azure.com:8084/credentials?expand=true
  1413  netstat -anltp | grep "LISTEN"
  1414  history
+ 1415  cat /home/sbesinci/.hal/config
+ 1416  cat /home/sbesinci/.hal/default/install.sh
+ 1417  cat /opt/spinnaker/config/spinnaker.yml
+ 1418  vi /opt/spinnaker/config/spinnaker.yml
+ 1419  systemctl enable redis-server && sudo systemctl start redis-server
+ 1420  sudo systemctl restart spinnaker
+ 1421  netstat -anltp | grep "LISTEN"
+ 1422  vi /opt/spinnaker/config/spinnaker.yml
+ 1423  netstat -anltp | grep "LISTEN"
+ 1424  vi /opt/spinnaker/config/spinnaker.yml
+ 1425  hal deploy apply
+ 1426  hal deploy connect
+ 1427  vi /opt/spinnaker/config/spinnaker.yml
+ 1428  netstat -anltp | grep "LISTEN"
+ 1429  vi /opt/spinnaker/config/spinnaker.yml
+ 1430  sudo systemctl restart spinnaker
+ 1431  systemctl daemon-reload
+ 1432  netstat -anltp | grep "LISTEN"
+ 1433  ls
+ 1434  ls -alh
+ 1435  systemctl status spinnaker
+ 1436  systemctl damemon-reload
+ 1437  systemctl daemon-reload
+ 1438  systemctl enable spinnaker
+ 1439  systemctl start spinnaker
+ 1440  systemctl status spinnaker
+ 1441  netstat -anltp
+ 1442  netstat -anltp | grep "LISTEN"
+ 1443*
+ 1444  netstat -anltp | grep "LISTEN"
+ 1445  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1446  systemctl restart apache2
+ 1447  netstat -anltp | grep "LISTEN"
+ 1448  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1449  netstat -anltp | grep "LISTEN"
+ 1450  nano /etc/apache2/ports.conf
+ 1451  systemctl restart apache2
+ 1452  kill 10772
+ 1453  top
+ 1454  systemctl restart apache2
+ 1455  journalctl | tail
+ 1456  journalctl -xe
+ 1457  netstat -anltp | grep "LISTEN"
+ 1458  nano /etc/apache2/ports.conf
+ 1459  systemctl restart apache2
+ 1460  netstat -anltp | grep "LISTEN"
+ 1461  history

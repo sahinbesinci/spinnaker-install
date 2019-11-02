@@ -170,3 +170,78 @@
  1459  systemctl restart apache2
  1460  netstat -anltp | grep "LISTEN"
  1461  history
+ 1462  systemctl enable redis-server && sudo systemctl start redis-server
+ 1463  sudo systemctl restart spinnaker
+ 1464  netstat -anltp | grep "LISTEN"
+ 1465  hal config security ui edit     --override-base-url http://spinnaker.uksouth.cloudapp.azure.com:9000
+ 1466  hal config security api edit     --override-base-url http://spinnaker.uksouth.cloudapp.azure.com:8084
+ 1467  hal deploy apply
+ 1468  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1469  nano /etc/apache2/ports.conf
+ 1470  service apache2 restart
+ 1471  netstat -anltp | grep "LISTEN"
+ 1472  hal config security api edit     --override-base-url http://spinnaker.uksouth.cloudapp.azure.com:8084
+ 1473  netstat -anltp | grep "LISTEN"
+ 1474  vi /opt/spinnaker/config/spinnaker.yml
+ 1475  nc -l -p 8084
+ 1476  netstat -anltp | grep "LISTEN"
+ 1477  netstat -anltp
+ 1478  netstat -anltp | grep "LISTEN"
+ 1479  nano InstallHalyard.sh
+ 1480  nano /etc/apt/sources.list.d/spinnaker.list
+ 1481  nano InstallHalyard.sh
+ 1482  vi /opt/spinnaker/config/spinnaker.yml
+ 1483  cd .hal/default/profiles/
+ 1484  ls
+ 1485  ls -alh
+ 1486  cd ..
+ 1487  ls -alh
+ 1488  nano /opt/halyard/bin/halyard
+ 1489  nano /opt/halyard/bin/halyard.bat
+ 1490  nano /opt/halyard/bin/hal
+ 1491  nano /opt/halyard/bin/halyard
+ 1492  systemctl status spinnaker
+ 1493  hal deploy apply
+ 1494  netstat -anltp | grep "LISTEN"
+ 1495  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1496  nano /etc/apache2/ports.conf
+ 1497  systemctl restart apache2
+ 1498  netstat -anltp | grep "LISTEN"
+ 1499  nano /opt/gate/config/gate.yml
+ 1500  nano /opt/gate/bin/gate
+ 1501  nano /opt/gate/bin/gate.bat
+ 1502  hal config security ui edit     --override-base-url http://spinnaker.uksouth.cloudapp.azure.com:9000
+ 1503  hal config security api edit     --override-base-url http://spinnaker.uksouth.cloudapp.azure.com:8084
+ 1504  netstat -anltp | grep "LISTEN"
+ 1505  journalctl -u gate
+ 1506  clear
+ 1507  curl http://spinnaker.uksouth.cloudapp.azure.com:8084
+ 1508  ls
+ 1509  wget http://spinnaker.uksouth.cloudapp.azure.com:8084
+ 1510  cat index.html
+ 1511  rm index.html
+ 1512  clear
+ 1513  hal deploy connect
+ 1514  netstat -anltp | grep "LISTEN"
+ 1515  nano .hal/config
+ 1516  nano /opt/spinnaker/config/spinnaker.yml
+ 1517  systemctl restart spinnaker
+ 1518  systemctl daemon-reload
+ 1519  systemctl restart spinnaker
+ 1520  netstat -anltp | grep "LISTEN"
+ 1521  systemctl restart spinnaker
+ 1522  netstat -anltp | grep "LISTEN"
+ 1523  echo "host: 0.0.0.0" | tee     ~/.hal/default/service-settings/gate.yml     ~/.hal/default/service-settings/deck.yml
+ 1524  echo "host: 0.0.0.0" | tee     .hal/default/service-settings/gate.yml     .hal/default/service-settings/deck.yml
+ 1525  hal deploy apply
+ 1526  netstat -anltp | grep "LISTEN"
+ 1527  hal deploy apply
+ 1528  netstat -anltp | grep "LISTEN"
+ 1529  hal deploy apply
+ 1530  netstat -anltp | grep "LISTEN"
+ 1531  nano .hal/default/service-settings/gate.yml
+ 1532  nano .hal/default/service-settings/deck.yml
+ 1533  nano .hal/config
+ 1534  nano .hal/default/connect.sh
+ 1535  nano .hal/default/history
+ 1536  history

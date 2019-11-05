@@ -245,3 +245,169 @@
  1534  nano .hal/default/connect.sh
  1535  nano .hal/default/history
  1536  history
+  1537  nano /opt/spinnaker/config/gate.yml
+ 1538  systemctl restart spinnaker
+ 1539  systemctl daemon reload
+ 1540  systemctl daemon-reload
+ 1541  systemctl restart spinnaker
+ 1542  netstat -anltp | grep "LISTEN"
+ 1543  wget --user sbesinci:Trabzon61 --header 'Accept: application/json' http://spinnaker.uksouth.cloudapp.azure.com:8084/applications
+ 1544  cat applications
+ 1545  rm applications
+ 1546  ls
+ 1547  nano /opt/spinnaker/config/gate.yml
+ 1548  hal deploy connect
+ 1549  nano /opt/spinnaker/config/gate.yml
+ 1550  free mem
+ 1551  top
+ 1552  clear
+ 1553  cd .hal/default/profiles/
+ 1554  ls
+ 1555  ls -alh
+ 1556  cd ..
+ 1557  ls .hal/
+ 1558  nano .hal/default/service-settings/gate.yml
+ 1559  nano .hal/default/profiles/gate-local.yml
+ 1560  nano .hal/default/profiles/settings-local.js
+ 1561  hal deploy apply
+ 1562  netstat -anltp | grep "LISTEN"
+ 1563  nano .hal/default/profiles/gate-local.yml
+ 1564  ls -alh .hal/default/profiles/
+ 1565  chmod 775 .hal/default/profiles/gate-local.yml
+ 1566  chmod 775 .hal/default/profiles/settings-local.js
+ 1567  ls -alh .hal/default/profiles/
+ 1568  chown sbesinci:sbesinci .hal/default/profiles/settings-local.js
+ 1569  chown sbesinci:sbesinci .hal/default/profiles/gate-local.yml
+ 1570  ls -alh .hal/default/profiles/
+ 1571  rm .hal/default/profiles/gate-local.yml
+ 1572  rm .hal/default/profiles/settings-local.js
+ 1573  hal deploy apply
+ 1574  ls -alh .hal/default/profiles/
+ 1575  netstat -anltp | grep "LISTEN"
+ 1576  nano /opt/spinnaker/config/spinnaker.yml
+ 1577  nano .hal/default/service-settings/gate.yml
+ 1578  nano .hal/config
+ 1579  nano /opt/gate/bin/gate
+ 1580  nano /opt/gate/config/gate.yml
+ 1581  nano /opt/halyard/bin/hal
+ 1582  history
+ 1583  wget --user sbesinci:Trabzon61 --header 'Accept: application/json' http://spinnaker.uksouth.cloudapp.azure.com:8084/applications
+ 1584  cat applications
+ 1585  rm applications
+ 1586  systemctl status spinnaler
+ 1587  systemctl status spinnaker
+ 1588  netstat -anltp | grep "LISTEN"
+ 1589  systemctl start spinnaker
+ 1590  netstat -anltp | grep "LISTEN"
+ 1591  systemctl start spinnaker
+ 1592  netstat -anltp | grep "LISTEN"
+ 1593  hal deploy apply
+ 1594  netstat -anltp | grep "LISTEN"
+ 1595  hal deploy apply
+ 1596  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1597  nano /etc/apache2/ports.conf
+ 1598  systemctl apache2
+ 1599  systemctl restart apache2
+ 1600  nano /etc/apache2/ports.conf
+ 1601  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1602  ls -alh /opt/deck/html/
+ 1603  ls -alh /opt/deck/html/*.html
+ 1604  histroy
+ 1605  history
+ 1606  nano .hal/default/service-settings/gate.yml
+ 1607  ls .hal/default/profiles/
+ 1608  az account list
+ 1609  FRONT50=http://front50.url:8080
+ 1610  curl -X POST   -H "Content-type: application/json"   -d '{ "name": "sekret-service-account@spinnaker-test.net", "memberOf": ["myApp-prod","myApp-qa"] }'   $FRONT50/serviceAccounts
+ 1611  FRONT50=http://localhost:8080
+ 1612  curl -X POST   -H "Content-type: application/json"   -d '{ "name": "sekret-service-account@spinnaker-test.net", "memberOf": ["myApp-prod","myApp-qa"] }'   $FRONT50/serviceAccounts
+ 1613  curl $FRONT50/serviceAccounts
+ 1614  netstat -anltp
+ 1615  netstat -anltp | grep "LISTEN"
+ 1616  nano .hal/default/profiles/fiat-local.yml
+ 1617  hal deploy apply
+ 1618  nano /etc/apache2/sites-enabled/spinnaker.conf
+ 1619  nano /etc/apache2/ports.conf
+ 1620  systemctl restart apache2
+ 1621  netstat -anltp | grep "LISTEN"
+ 1622  ls -alh /opt/deck/html/settings-local.js
+ 1623  ls -alh /opt/deck/html
+ 1624  chowner root:root /opt/deck/html/settings-local.js
+ 1625  chown root:root /opt/deck/html/settings-local.js
+ 1626  chmod 644 /opt/deck/html/settings-local.js
+ 1627  ls -alh /opt/deck/html
+ 1628  apt-get update
+ 1629  rm InstallHalyard.sh
+ 1630  clear
+ 1631  systemctl remove spinnaker
+ 1632  systemctl stop spinnaker
+ 1633  systemctl disable spinnaker
+ 1634  apt uninstall spinnaker
+ 1635  apt remove spinnaker
+ 1636  apt-get remove spinnaker
+ 1637  spinnaker
+ 1638  netstat -anltp | grep "LISTEN"
+ 1639  .hal/uninstall.sh
+ 1640  ls -alh
+ 1641  netstat -anltp | grep "LISTEN"
+ 1642  apt-get remove redis
+ 1643  apt-get remove redis-server
+ 1644  netstat -anltp | grep "LISTEN"
+ 1645  apt-get remove apache2
+ 1646  netstat -anltp | grep "LISTEN"
+ 1647  reboot
+ 1648  cd ~
+ 1649*
+ 1650  netstat -anltp | grep "LISTEN"
+ 1651  clear
+ 1652  curl -O https://raw.githubusercontent.com/spinnaker/halyard/master/install/debian/InstallHalyard
+ 1653  cat InstallHalyard.sh
+ 1654  clear
+ 1655  apt-get update
+ 1656  sudo bash InstallHalyard.sh
+ 1657  hal --version
+ 1658  . ~/.bashrc
+ 1659  update-halyard
+ 1660  az --version
+ 1661  az update
+ 1662  apt-get update
+ 1663  az --version
+ 1664  sudo apt-get update azure-cli
+ 1665  apt-get update azure-cli
+ 1666  sudo apt-get update && sudo apt-get upgrade
+ 1667  az --version
+ 1668  az account-list
+ 1669  az login
+ 1670  az account-list
+ 1671  SUBSCRIPTION_ID=f11822bb-7aee-474a-b0cf-d3b33793b52a
+ 1672  az account set --subscription $SUBSCRIPTION_ID
+ 1673  az ad sp create-for-rbac --name "Spinnaker-Deploy"
+ 1674  APP_ID=18d9da54-f0e4-46ae-b683-9f2fa86894a4
+ 1675  TENANT_ID=8fbe7bd6-3c2e-4459-a184-ac9f37fd9c68
+ 1676  az account list-locations --query [].name
+ 1677  RESOURCE_GROUP="Spinnaker-Deploy"
+ 1678  az group create --name $RESOURCE_GROUP --location uksouth
+ 1679  VAULT_NAME="Spinnaker-Deploy"
+ 1680  az keyvault create --enabled-for-template-deployment true --resource-group $RESOURCE_GROUP --name $VAULT_NAME
+ 1681  az keyvault set-policy --secret-permissions get --name $VAULT_NAME --spn $APP_ID
+ 1682  ssh-keygen -t rsa
+ 1683  az keyvault secret set --name VMUsername --vault-name $VAULT_NAME --value sbesinci
+ 1684  az keyvault secret set --name VMSshPublicKey --vault-name $VAULT_NAME --value 2s1NuwAe5AOGWkr3hjWO9q8JmjlTxAkBFUsUT2H+huM
+ 1685  az keyvault secret set --name VMPassword --vault-name $VAULT_NAME --value q1.Mw2.Ne3.B
+ 1686  hal config provider azure enable
+ 1687  hal config provider azure account add my-azure-account   --client-id $APP_ID   --tenant-id $TENANT_ID   --subscription-id $SUBSCRIPTION_ID   --default-key-vault $VAULT_NAME   --default-resource-group $RESOURCE_GROUP   --packer-resource-group $RESOURCE_GROUP   --app-key
+ 1688  az account list
+ 1689  hal config provider azure account add my-azure-account   --client-id $APP_ID   --tenant-id $TENANT_ID   --subscription-id $SUBSCRIPTION_ID   --default-key-vault $VAULT_NAME   --default-resource-group $RESOURCE_GROUP   --packer-resource-group $RESOURCE_GROUP   --app-key
+ 1690  az ad sp credential reset --name $APP_ID
+ 1691  hal config provider azure account add my-azure-account   --client-id $APP_ID   --tenant-id $TENANT_ID   --subscription-id $SUBSCRIPTION_ID   --default-key-vault $VAULT_NAME   --default-resource-group $RESOURCE_GROUP   --packer-resource-group $RESOURCE_GROUP   --app-key
+ 1692  az account list
+ 1693  hal config deploy edit --type localdebian
+ 1694  hal config storage edit --type redis
+ 1695  hal version list
+ 1696  hal deploy apply
+ 1697  pwd
+ 1698  ls -alh
+ 1699  cd /home/sbesinci/
+ 1700  ls -alh
+ 1701  history
+
